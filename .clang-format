@@ -1,0 +1,40 @@
+# Common settings
+BasedOnStyle: GNU
+TabWidth: 3
+IndentWidth: 3
+UseTab: Always
+ColumnLimit: 0
+
+AlignConsecutiveMacros: AcrossEmptyLinesAndComments
+AlignTrailingComments: true
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: true
+AllowShortBlocksOnASingleLine: Always
+AllowShortLoopsOnASingleLine: true
+AlwaysBreakAfterReturnType: None
+AlwaysBreakAfterDefinitionReturnType: None
+BinPackArguments: false
+BinPackParameters: false
+BreakBeforeBraces: Allman
+IndentCaseLabels: true
+MaxEmptyLinesToKeep: 2
+PointerAlignment: Right
+ReflowComments: false
+SortIncludes: Never
+
+SpaceAfterCStyleCast: false
+SpacesInCStyleCastParentheses: true
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeParens: Never
+SpaceInEmptyParentheses: false
+SpacesBeforeTrailingComments: 1
+SpacesInAngles: false
+SpacesInContainerLiterals: true
+SpacesInParentheses: true
+SpacesInSquareBrackets: false
+SpaceAfterTemplateKeyword: true
+SpaceBeforeInheritanceColon: true
+
+PenaltyReturnTypeOnItsOwnLine: 9999
+PenaltyBreakComment: 1000
+PenaltyBreakString: 1000
