@@ -24,19 +24,28 @@ void setup()
 
 void loop()
 {
+	Serial.println( "New loop.\n" );
 	digitalWrite( 2, HIGH );
+	Serial.printf( "LED is %d\n", digitalRead( 2 ) );
 	for( dutyCycle = 5; dutyCycle <= 32; dutyCycle++ )
 	{
 		ledcWrite( PWMChannel, dutyCycle );
-		delay( 70 );
+		delay( 150 );
 	}
+	Serial.printf( "Currently at: %d\n", dutyCycle );
 	delay( 3000 );
 
+	Serial.println( "Middle of loop.\n" );
+
 	digitalWrite( 2, LOW );
+	Serial.printf( "LED is %d\n", digitalRead( 2 ) );
 	for( dutyCycle = 32; dutyCycle >= 5; dutyCycle-- )
 	{
 		ledcWrite( PWMChannel, dutyCycle );
 		delay( 70 );
 	}
+	Serial.printf( "Currently at: %d\n", dutyCycle );
 	delay( 3000 );
+
+	Serial.println( "End of loop...\n" );
 }
