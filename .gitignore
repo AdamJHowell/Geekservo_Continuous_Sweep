@@ -1,3 +1,9 @@
+.idea/
+*.iml
+privateInfo.*
+debug_custom.json
+*.svd
+
 cmake-build-debug/
 /cmake-build-debug/
 /cmake-build-debug/*
@@ -5,7 +11,7 @@ cmake-build-debug/
 /.vscode/
 /.vscode/*
 .idea/
-privateInfo.h
+privateInfo.*
 
 #################
 ## Project-specific
